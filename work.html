@@ -1,0 +1,110 @@
+<main class="main-work">
+  <!-- Contenido de la página Work -->
+
+  <!-- Cabecera central General-->
+  <section class="hero__work">
+    <!-- Cabecera dentral  (imagen+título) -->
+    <div class="hero__overlay">
+      <!-- Capa oscura degradado -->
+
+      <h2 class="hero__title">
+        <!-- Título principal en dos líneas mediante salto -->
+        <span class="hero__title-line">TRABAJOS</span>
+        <span class="hero__title-line">MIX</span>
+      </h2>
+
+      <p class="hero__subtitle">DE LO MEJORCITO</p>
+      <!-- Subtítulo -->
+
+      <div class="hero__button-ver">
+        <!-- Contenedor del botón de contacto -->
+        <button class="button-ver__button" id="boton-ver" onclick="document.querySelector('#contact').click();"> <!-- Botón conectado con página contact-->
+          
+          <span class="button-ver__text">CONTACT</span>
+          <!-- Texto del botón -->
+          <span class="button-ver__icon"></span>
+          <!--Icono Flecha Botón-->
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de 'Las Más Poulares' -->
+  <section class="work-grid__section">
+    <!-- Contenedor general cuadrícula -->
+
+    <h2 class="work-grid__title">LAS MÁS POPULARES</h2>
+    <!-- Título de esta sección -->
+
+    <div class="work-grid__container">
+      <!--Grid de las Cards -->
+
+      <!-- Card Nº1 -->
+      <article class="work-grid__item work-grid__item--chocho">
+        <h3 class="visually-hidden">Trabajo: CHOCHOLOKO</h3>  <!-- Titulo oculto -->
+        <!-- Título oculto solo accesible para lectores de pantalla (accesibilidad) -->
+        <button onclick="document.querySelector('#poster').click();" class="work-grid__link"
+          aria-label="Ir a contacto: CHOCHOLOKO"> <!-- Button redirige a Página Láminas -->
+          <span class="work-grid__overlay">
+            <span class="work-grid__name">CHOCHOLOKO</span>
+            <!-- Título de la lámina sobre la imagen (hover) -->
+          </span>
+        </button>
+      </article>
+
+
+      <!-- Card Nº2 -->
+      <article class="work-grid__item work-grid__item--bonita">
+        <h3 class="visually-hidden">Trabajo: BONITA</h3>  <!-- Titulo oculto -->
+        <button onclick="document.querySelector('#poster').click();" class="work-grid__link"
+          aria-label="Ver más de BONITA"> <!-- Button redirige a Página Láminas -->
+          <span class="work-grid__overlay">
+            <span class="work-grid__name">BONITA</span> <!-- Título de la lámina sobre la imagen (hover) -->
+          </span>
+        </button>
+      </article>
+
+      <!-- Card Nº3 -->
+      <article class="work-grid__item work-grid__item--poderio">
+        <h3 class="visually-hidden">Trabajo: PODERÍO</h3>  <!-- Titulo oculto -->
+        <button onclick="document.querySelector('#poster').click()" class="work-grid__link"
+          aria-label="Ver más de PODERÍO"> <!-- Button redirige a Página Láminas -->
+          <span class="work-grid__overlay">
+            <span class="work-grid__name">PODERÍO</span> <!-- Título de la lámina sobre la imagen (hover) -->
+          </span>
+        </button>
+      </article>
+    </div>
+  </section>
+
+  <!-- Efecto Parallax -->
+
+  <!-- Sección de imagen tipo Parallax Nº1 -->
+  <section class="parallax parallax--chocho" aria-hidden="true" role="presentation">
+    <!-- Es decorativa -->
+    <h2 class="visually-hidden">Parallax visual 1</h2>
+  </section>
+
+  <!-- Contenido entre Parallax -->
+  <section class="contenidoparallax">
+    <h2 class="visually-hidden">Contenido Visual 1</h2>
+    <p>CADA CUAL MÁS LOKO</p>
+  </section>
+
+  <!-- Parallax Nº2 -->
+  <section class="parallax parallax--bonita" aria-hidden="true" role="presentation">
+    <h2 class="visually-hidden">Parallax visual 2</h2>
+  </section>
+
+  <!-- Contenido entre Parallax -->
+  <section class="contenidoparallax">
+    <h2 class="visually-hidden">Contenido Visual 2</h2>
+    <p>¿HAS VISTO?</p>
+  </section>
+
+  <!-- Parallax Nº3 -->
+  <section class="parallax parallax--poderio" aria-hidden="true" role="presentation">
+    <h2 class="visually-hidden">Parallax visual 3</h2>
+  </section>
+
+</main>

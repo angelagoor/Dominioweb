@@ -1,0 +1,137 @@
+<main class="about"><!-- Contenedor principal de la sección “Sobre mí” -->
+
+  <!-- Sección introductoria con imagen y descripción personal -->
+  <section class="about__intro"><!-- Fondo de decoración rosa 'A modo de Marco' -->
+    <div class="about__profile"> <!-- Contenedor que alberga la Img de Perfil y el texto -->
+      <picture>
+        <source srcset="images/imagen_about.webp" type="image/webp">
+        <!-- Formato adaptativo de imagen optimizado para webp -->
+        <img src="images/imagen_about.jpg" alt="Foto de perfil de Ángela" class="about__image" loading="lazy">
+      </picture>
+
+      <div class="about__bio"> <!-- Todo el texto de presentación -->
+        <h2 class="about__title">Sobre mí</h2> <!-- Título de la sección 'About' -->
+        <p class="about__description"> <!-- Texto Biográfico -->
+
+          <!-- Breve Resumen Profesional a modo de Biografía -->
+          Soy Ángela Gómez Ordóñez, diseñadora multidisciplinar con formación en Bellas Artes y una profunda pasión por
+          el arte y la comunicación visual. Me especializo en diseño gráfico, UX/UI, diseño web y marketing digital.
+          Disfruto transformando ideas en experiencias visuales únicas. Domino herramientas como Adobe Illustrator,
+          Photoshop, InDesign, Premiere, Procreate y Figma, y actualmente exploro nuevas plataformas como Framer para
+          seguir ampliando mi universo creativo.
+        </p>
+        <!-- Enlace de descarga directa del mi CV en formato PDF -->
+        <div class="about__cv">
+          <a href="images/cv_angela_gomez.pdf" download class="about__cv-button" title="Descargar CV de Ángela">
+            CV <!-- Texto del enterior del 'botón' -->
+            <span class="about__cv-button-icon"></span> <!-- El icono de flecha -->
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Banner horizontal animado de Habilidades/Servicios que ofertar áreas de trabajo -->
+  <div class="scroll-banner" aria-hidden="true"> <!-- Está oculto para lectores de pantalla -->
+    <div class="scroll-banner__inner">
+      <!-- Elementos situados en el banner animado infinito -->
+      <span>• Diseño Gráfico</span>
+      <span>• Diseño UX / UI</span>
+      <span>• Branding Creativo</span>
+      <span>• Diseño Web</span>
+      <span>• Encargos Personalizados</span>
+    </div>
+  </div>
+
+  <!-- Galería interactiva tipo Acordeón de imágenes -->
+  <section class="galeria" aria-label="Galería interactiva de imágenes">
+    <h2 class="galeria__title">GALERÍA FOTOS</h2>
+    <div class="galeria__container" role="group" aria-label="Selector de imágenes">
+
+      <!-- Img Nº1 -->
+      <input class="galeria__radio" type="radio" name="card" id="card-a" checked>
+      <label class="galeria__label galeria__label--a" for="card-a" aria-label="Imagen_a"></label>
+      <!-- Img Nº3 -->
+      <input class="galeria__radio" type="radio" name="card" id="card-b">
+      <label class="galeria__label galeria__label--b" for="card-b" aria-label="Imagen_b"></label>
+      <!-- Img Nº4 -->
+      <input class="galeria__radio" type="radio" name="card" id="card-c">
+      <label class="galeria__label galeria__label--c" for="card-c" aria-label="Imagen_c"></label>
+      <!-- Img Nº5 -->
+      <input class="galeria__radio" type="radio" name="card" id="card-d">
+      <label class="galeria__label galeria__label--d" for="card-d" aria-label="Imagen_d"></label>
+    </div>
+  </section>
+
+
+
+
+  <!-- Sección: Formación Académica -->
+  <section class="about__education">
+    <h2 class="about__subtitle">Formación Académica</h2>
+    <!-- Introducción explciativa de la formación -->
+    <p class="about__description">Mi formación académica incluye una sólida base en Bellas Artes y especializaciones
+      en diseño gráfico, UX/UI y diseño web. He complementado mi educación con cursos y talleres que me han permitido
+      dominar herramientas clave en el ámbito del diseño.</p>
+
+    <!-- Lista de estudios -->
+    <ul class="about__list">
+      <li class="about__list-item">Máster en Diseño Gráfico, Diseño UX-UI y Diseño Web.
+        Centro CEI – Sevilla</li>
+      <li class="about__list-item">Máster MAES Especialidad Dibujo, Imagen y Artes Plásticas. – Universidad de Málaga
+      </li>
+      <li class="about__list-item">Graduada en Bellas Artes con mención de Diseño Gráfico.– Universidad de Granada</li>
+    </ul>
+  </section>
+
+  <!-- Herramientas que uso en los Procesos Creativos -->
+  <section class="about__tools">
+    <h2 class="about__subtitle">Herramientas que uso</h2>
+    <div class="about__tools-grid"><!-- Items en línea horizontal y animada-->
+      <span class="about__tool">Procreate</span>
+      <span class="about__tool">Photoshop</span>
+      <span class="about__tool">Illustrator</span>
+      <span class="about__tool">Figma</span>
+      <span class="about__tool">Indesign</span>
+      <span class="about__tool">Canva</span>
+    </div>
+  </section>
+
+  <!-- Trayectoria profesional que he seguido -->
+  <section class="about__trajectory">
+    <h2 class="about__subtitle">Trayectoria/Experincia Laboral</h2>
+    <div class="about__timeline">
+
+      <!-- Bloques de Estructura común: Año + Trabajo -->
+      <div class="about__event">
+        <div class="about__dot"></div> <!-- Punto Decorativo (Aspecto Visual) -->
+        <div class="content">
+          <div class="about__date">2022 – 2023</div> <!-- Año de estudios-->
+          <div class="about__description">Docente En Escuela de Artes San Telmo – Málaga</div>
+          <!-- Nombre del Trabajo-->
+        </div>
+      </div>
+      <div class="about__event">
+        <div class="about__dot"></div> <!-- Punto Decorativo (Aspecto Visual) -->
+        <div class="about__date">2021 – 2022</div> <!-- Año de estudios-->
+        <div class="about__description">Galerista- Galleria D’Arte Mentana – Florencia (Italia) </div>
+        <!-- Nombre del Trabajo-->
+      </div>
+    </div>
+
+
+
+
+  </section>
+
+  <!-- Reproductor de video POSTER-en WEBM Y MP4-preload, todo bien optimizado -->
+  <div class="video-reproductor">
+    <video width="640" height="360" controls preload="none" poster="images/mamitrioska.jpg">
+      <!-- Img personal de poster-->
+      <source src="images/video.webm" type="video/webm"> <!-- Formato + Ligero en Webm-->
+      <source src="images/video.mp4" type="video/mp4"> <!-- Mayor compatibilidad en Mp4 -->
+      Tu navegador no soporta el elemento de video.<!-- Texto informativo -->
+    </video>
+  </div>
+
+</main>

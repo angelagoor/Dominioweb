@@ -1,0 +1,116 @@
+<!-- Contenido Principal de la Página Home -->
+
+<main class="main-home">
+
+  <!--Sección de cabecera con título, subtítulo y botón intectivo -->
+
+
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero__overlay"> <!-- Capa con fondo y degradado -->
+
+      <!-- Título principal de la página -->
+      <h2 class="hero__title" id="hero-title">
+        <span class="hero__title-line">PORTFOLIO</span> <!-- Primera línea  -->
+        <span class="hero__title-line">ARTÍSTICO</span> <!-- Salto de línea con span- Segunda línea  -->
+      </h2>
+      <!-- Subtítulo 'Mi Nombre en concreto'-->
+      <p class="hero__subtitle">ÁNGELA GÓMEZ ORDÓÑEZ</p>
+
+      <!-- Botón de navegación a Página de  "About" -->
+
+      <div class="hero__button-ver">
+        <button class="button-ver__button" id="boton-ver" onclick="document.querySelector('#about').click();">
+          <span class="button-ver__text">ABOUT</span> <!-- texto interior del Botón -->
+          <span class="button-ver__icon"></span> <!-- Ícono de flecha -->
+        </button>
+      </div>
+    </div>
+
+
+
+  </section>
+
+  <!-- Sección de introdución sobre CECEO -->
+  <section class="section-container" aria-labelledby="ceceo-title">
+    <h2 class="titlesection">PORQUE EL CECEO SÍ SE ENTIENDE</h2> <!-- Título de Sección -->
+    <!-- Texto descriptivo -->
+    <p class="section-description">Esta página es tu solución real (sí, real, no como esas láminas genéricas de IKEA que
+      todo el mundo tiene colgadas en casa). Aquí encuentras productos hechos por una artista jovencísima —y con más
+      talento que años— creados con tanto amor y cariño que hasta tu salón va a querer abrazarlos.
+      Cada pieza está pensada para llenar de color, estilo y emoción cualquier rincón de tu hogar, especialmente ese
+      salón donde te marcas charlas profundas... o maratones de series con snacks.
+      Así que, si quieres algo único, auténtico y con historia... ya sabes, deja las láminas de catálogo y pásate al
+      arte con personalidad.</p>
+  </section>
+
+  <!-- Imagen 'banner' entre secciones -->
+  <div class="about__image-container">
+    <picture>
+      <source srcset="images/mamitrioska.webp" type="image/webp"> <!-- Versión optimizada en WebP -->
+      <img class="about__imagebaner" src="images/mamitrioska.jpg" alt="mamitrioska" loading="lazy">
+      <!-- La de respaldo en jpg -->
+    </picture>
+  </div>
+
+  <!-- Sección de Proyectos en en Grid -->
+  <section class="wrapper" aria-labelledby="grid-title">
+    <h2 class="titlegrid" id="grid-title">Proyectos recientes</h2> <!-- Título de la Grid -->
+    <div class="grid-section">
+
+      <!-- Proyecto a -->
+      <div class="grid-section__item grid-section__item--a">
+        <picture class="grid-section__picture">
+          <source srcset="images/degradado_color.webp" type="image/webp"> <!-- Versión optimizada en WebP -->
+          <img src="images/degradado_color.jpg" alt="Imagen de Collage A" class="grid-section__image" loading="lazy">
+          <!-- La de respaldo en jpg -->
+        </picture>
+      </div>
+      <!-- Proyecto b -->
+      <div class="grid-section__item grid-section__item--b">
+        <picture class="grid-section__picture">
+          <source srcset="images/degradado_rosa_vertical.webp" type="image/webp"> <!-- Versión optimizada en WebP -->
+          <img src="images/degradado_rosa_vertical.jpg" alt="Imagen de Collage B" class="grid-section__image"
+            loading="lazy"> <!-- La de respaldo en jpg -->
+        </picture>
+      </div>
+      <!-- Proyecto c -->
+      <div class="grid-section__item grid-section__item--c">
+        <picture class="grid-section__picture">
+          <source srcset="images/nevera.webp" type="image/webp"> <!-- Versión optimizada en WebP -->
+          <img src="images/ne" alt="Imagen de Collage C" class="grid-section__image" loading="lazy">
+          <!-- La de respaldo en jpg -->
+        </picture>
+      </div>
+      <!-- Proyecto d -->
+      <div class="grid-section__item grid-section__item--d">
+        <picture class="grid-section__picture">
+          <source srcset="images/poderio.webp" type="image/webp"> <!-- Versión optimizada en WebP -->
+          <img src="images/poderio.jpg" alt="Imagen de Collage D" class="grid-section__image" loading="lazy">
+          <!-- La de respaldo en jpg -->
+        </picture>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Banner info -->
+  <section class="section-container" aria-labelledby="ceceo-title">
+    <!-- Título de Sección -->
+    <h2 class="banner-title" id="ceceo-title">ACCEDE A LO MEJORCITO QUE TIENE EL CECEO, LO ÚLTIMO</h2>
+    <!-- Texto descriptivo -->
+    <p class="section-description">Accede a lo mejor que hay en el mercado, lo mejorcito está aquí: calidad, frescura y
+      modernés a tope. Olvídate de lo de siempre, de esas láminas sosas que parecen sacadas del catálogo de IKEA (sí,
+      esas que ya tienen hasta tus vecinos). Aquí traemos arte con chispa, originalidad y más flow que una playlist en
+      viernes por la tarde. Dale vida a tus paredes con piezas que no encontrarás en ningún otro sitio — y que además
+      tienen más personalidad que tu suegra en una boda. Calidad que se nota, frescura que se siente y modernidad que no
+      pasa de moda. ¡Ponte guapo el salón y sorprende a todos!</p>
+  </section>
+
+  <!-- Imagen decorativa 'cierre' -->
+  <div class="about__image-container">
+    <picture>
+      <source srcset="images/degradadoverde.webp" type="image/webp"> <!-- Versión optimizada en WebP -->
+      <img class="about__imagebanersegundo" src="images/degradadoverde.jpg" alt="Retrato de Ángela Gómez Ordóñez"
+        loading="lazy"> <!-- La de respaldo en jpg -->
+    </picture>
+  </div>
+</main>

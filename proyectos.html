@@ -1,0 +1,138 @@
+<main class="main-project">
+  <!-- Header del Proyecto: título y subtítulo del proyecto con espacio para imagen -->
+  <div class="project-header">
+    <div class="project-header__content">
+      <h1 class="project-header__title">TATUPATI</h1> <!-- Título del proyecto -->
+      <p class="project-header__subtitle">Proyecto UX/UI</p> <!-- Subtitulo-->
+    </div>
+    <div class="project-header__image-wrapper"></div> <!-- Contenedor (imagen decorativa-en un futuro) -->
+  </div>
+
+  <!-- Contenedor principal Tatuapati -->
+  <div class="tatuapati">
+    <div class="tatuapati__intro">
+      <div class="tatuapati__layout">
+        <!-- Imagen cabecera -->
+        <div class="tatuapati__image-wrapper">
+          <picture>
+            <source srcset="images/tatupati_cabecera.webp" type="image/webp">
+            <img src="images/tatupati_cabecera.jpg" alt="Vista previa del proyecto Tatuapati" class="tatuapati__image"
+              loading="lazy"> 
+          </picture>
+        </div>
+
+        <!-- Texto descriptivo + imagen -->
+        <div class="tatuapati__text">
+          <h2 class="tatuapati__title">APP PARA TATUADORES</h2> <!-- Subtítulo Intro-->
+          <p class="tatuapati__description">
+            <!-- Descripción principal de la app -->
+            TATUPATI es la plataforma donde los tatuadores y amantes del tatuaje se encuentran para compartir,
+            descubrir, vender y comprar diseños originales.
+            Aquí los diseños no se quedan olvidados en una libreta: se convierten en tatuajes únicos y exclusivo para
+            todo aquel que los quiera.
+
+            Si eres artista, puedes vender tus diseños y llegar a más gente. Y si estás buscando algo especial que
+            llevar en tu piel, aquí vas a encontrar justo ese tatuaje que no sabías que querías.
+          </p>
+          <p class="tatuapati__description">
+            <!-- Segunda parte de la descripción-->
+            Además de facilitar el contacto con artistas y estudios, la aplicación busca ser un espacio de comunidad,
+            donde los usuarios puedan compartir experiencias, recomendaciones y mantenerse al tanto de nuevas tendencias
+            y eventos relacionados con el mundo del tatuaje.
+          </p>
+          <!-- Lista con las características principales de la app -->
+          <ul class="tatuapati__list">
+            <li class="tatuapati__list">Acceso a contacto con Tatuadores/Tatuados/Estudios</li>
+            <li class="tatuapati__list">Chat de contacto personal</li>
+            <li class="tatuapati__list">Exploración de estilos y tendencias</li>
+            <li class="tatuapati__list">Compra exclusiva de diseños</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Sección: Proceso de Diseño -->
+      <div class="tatuapati__layout">
+        <div class="tatuapati__text">
+          <h2 class="tatuapati__title">Proceso de Diseño</h2> <!-- Título de la sección proceso -->
+          <!-- Primer párrafo explicativo del proceso -->
+          <p class="tatuapati__description">
+            Además de facilitar el contacto directo con artistas y estudios, la aplicación nace para cubrir una
+            necesidad actual muy clara: crear un espacio de comunidad real y activa para todos los amantes del tatuaje.
+            No solo se trata de encontrar al artista perfecto, sino de compartir experiencias auténticas,
+            recomendaciones de primera mano y consejos útiles entre usuarios.
+          </p>
+          <!-- Segundo párrafo con más detalles del objetivo y filosofía del proyecto -->
+          <p class="tatuapati__description">
+            Así, cada persona puede descubrir
+            tendencias nuevas, eventos exclusivos y mantenerse siempre actualizado en un mundo que evoluciona
+            constantemente. Esta plataforma responde a un problema típico de dispersión y dificultad para conectar,
+            ofreciendo un lugar donde la pasión por el tatuaje une a la gente y hace que cada paso del proceso sea más
+            cercano, seguro y divertido.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sección que muestra las pantallas claves de la app -->
+  <section class="tatuapati__tv">
+    <h2 class="tatuapati__tv-title">Pantallas Claves</h2>
+    <div class="tatuapati__grid">
+
+      <!-- Tarjeta para pantalla Onboarding -->
+      <article class="tatuapati__card tatuapati__card--onboarding">
+        <h3 class="visually-hidden">Pantalla Onboarding</h3> <!-- Título oculto para accesibilidad -->
+      </article>
+      <!-- Tarjeta para pantalla Home -->
+      <article class="tatuapati__card tatuapati__card--home">
+        <h3 class="visually-hidden">Pantalla Home</h3>
+      </article>
+      <!-- Tarjeta para pantalla Login -->
+      <article class="tatuapati__card tatuapati__card--login">
+        <h3 class="visually-hidden">Pantalla Loging</h3>
+      </article>
+    </div>
+  </section>
+
+  <!-- Galería de imágenes del proyecto con botones para activar lightbox -->
+  <section class="gallery" aria-labelledby="gallery-title">
+    <h2 id="gallery-title" class="gallery__title">Galería de Proyecto</h2>
+    <div class="gallery__list" role="list">
+
+      <!-- Botón para abrir imagen "Diseño Descubre" -->
+      <button type="button" class="gallery__item gallery__item--discover" aria-labelledby="gallery-imga">
+        <span id="gallery-imga" class="visually-hidden">Diseño Descrubre</span>
+      </button>
+      <!-- Botón para abrir imagen "Descubre Artista" -->
+      <button type="button" class="gallery__item gallery__item--artist" aria-labelledby="gallery-imgb">
+        <span id="gallery-imgb" class="visually-hidden">Descubre Artista</span>
+      </button>
+      <!-- Botón para abrir imagen "Perfil Artista" -->
+      <button type="button" class="gallery__item gallery__item--profile" aria-labelledby="gallery-imgc">
+        <span id="gallery-imgc" class="visually-hidden">Perfil Artista</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Lightbox modal para mostrar imágenes ampliadas -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-labelledby="lightbox-caption">
+    <div class="lightbox__overlay" id="lightbox-overlay"></div> <!-- Fondo oscuro detrás del lightbox -->
+    <figure class="lightbox__content">
+      <button class="lightbox__close" id="lightbox-close" aria-label="Cerrar galería">✕</button> <!-- Botón para cerrar -->
+      <img class="lightbox__img" id="lightbox-img" src="images/basura.jpg" alt="Detalle"> <!-- Imagen ampliada -->
+      <figcaption class="lightbox__caption" id="lightbox-caption">Detalle</figcaption> <!-- Descripción de la imagen -->
+    </figure>
+  </div>
+
+  <!-- Sección con las herramientas/programas utilizados en el proyecto -->
+  <section class="project-tech">
+    <h2 class="project-tech__title">Programas Usados</h2>
+
+    <!-- Lista de programas -->
+    <ul class="project-tech__list">
+      <li class="project-tech__item">Figma</li> <!-- Programa 1 -->
+      <li class="project-tech__item">Photoshop</li> <!-- Programa 2 -->
+      <li class="project-tech__item">Illustrator</li> <!-- Programa 3 -->
+    </ul>
+  </section>
+</main>

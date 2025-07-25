@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- Establece la codificación de caracteres en UTF-8 para mostrar correctamente caracteres especiales como acentos o la ñ -->
+  <meta charset="UTF-8">
+
+  <!-- Indica a Internet Explorer que use el motor de renderizado más moderno disponible -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Hace que el diseño se adapte al ancho del dispositivo y establece un nivel de zoom inicial de 1.0 (diseño responsive) -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Indica a los motores de búsqueda que indexen la página y sigan los enlaces (SEO básico) -->
+  <meta name="robots" content="index, follow">
+
+  <!-- Proporciona una descripción breve del contenido de la página (aparece en resultados de búsqueda). Ideal: 150-160 caracteres -->
+  <meta name="description" content="Descripción breve del sitio o de la página (máx. 150-160 caracteres)">
+
+  <!-- Lista de palabras clave relacionadas con tu contenido. Ya no es relevante para Google, pero puede servir para otros buscadores -->
+  <meta name="keywords" content="palabras, clave, relacionadas, con, tu, contenido">
+
+  <!-- Nombre del autor o equipo creador. Útil para documentación y atribución -->
+
+  <meta name="author" content="Ángela Gómez Ordóñez">
+
+  <!-- Título de la página miniatura -->
+  <title>CECEO</title>
+
+  <!-- Icono Ventana Miniatura -->
+  <link rel="icon" type="image/svg" href="images/logo_oreja_negro.svg">
+
+  <!-- Preconnect Google Fonts -->
+  <!-- Preconexión a los servidores de Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Carga no bloqueante de la fuente Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- para usuarios sin JavaScript mejorar renidmiento -->
+  <noscript>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet">
+  </noscript>
+
+
+  <!-- Hoja de Estilos CSS-->
+  <link rel="stylesheet" href="css/main.css"> <!-- CSS crítico --> <!-- Hoja Principal elmentos comunes-->
+  <link rel="preload" href="css/home.css" as="style" onload="this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="css/home.css">
+  </noscript> <!-- Hoja de estilos Página 'Home'-->
+  <link rel="preload" href="css/contacto.css" as="style" onload="this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="css/contacto.css">
+  </noscript> <!-- Hoja de estilos Página 'Contact'-->
+  <link rel="preload" href="css/about.css" as="style" onload="this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="css/about.css">
+  </noscript> <!-- Hoja de estilos Página 'About'-->
+  <link rel="preload" href="css/servicios.css" as="style" onload="this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="css/servicios.css">
+  </noscript> <!-- Hoja de estilos Página 'Services'-->
+  <link rel="preload" href="css/work.css" as="style" onload="this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="css/work.css">
+  </noscript> <!-- Hoja de estilos Página 'Work'-->
+  <link rel="preload" href="css/poster.css" as="style" onload="this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="css/poster.css">
+  </noscript> <!-- Hoja de estilos Página 'Poster'-->
+  <link rel="preload" href="css/proyectos.css" as="style" onload="this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="css/proyectos.css">
+  </noscript> <!-- Hoja de estilos Página 'Proyect'-->
+
+  <link rel="preload" href="css/collage.css" as="style" onload="this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="css/collage.css">
+  </noscript><!-- Hoja de estilos Página 'Collage'-->
+
+  <!-- Hoja de Java Script-->
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+  <!-- Sprite SVG Symbol -->
+  <svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="logo-oreja-blanca" viewBox="0 0 100 100">
+
+      <!-- Logo oreja blanca header -->
+      <image href="images/logo_oreja_blanca.svg" width="100" height="100" />
+    </symbol>
+    <symbol id="logo-oreja-negro" viewBox="0 0 100 100">
+      <!-- Logo oreja negra footer -->
+      <image href="images/logo_oreja_negro.svg" width="100" height="100" />
+    </symbol>
+    <symbol id="icon-behance" viewBox="0 0 100 100">
+      <!-- Logo behance -->
+      <image href="images/behance_redondo.svg" width="100" height="100" />
+    </symbol>
+    <symbol id="icon-linkedin" viewBox="0 0 100 100">
+      <!-- Logo LinkedIn -->
+      <image href="images/link_redondo.svg" width="100" height="100" />
+    </symbol>
+  </svg>
+
+  <header class="header">
+    <div class="header__brand">
+      <h1 class="header__title">
+        <!-- Título Principal 'Nombre Marca'-->
+        <button class="header__title-link" title="Logo de la Página" aria-label="Logo de la Página"
+          onclick="location.href='index.html'">CECEO</button>
+
+        <!-- Logo de la marca personal en la Nav --> <!-- MIRAR BIEN LE FORMATO DE TRANSPARIENCIA -->
+        <svg class="header__logo" width="70" height="85" aria-label="Icono">
+          <use xlink:href="#logo-oreja-blanca"></use>
+        </svg>
+      </h1>
+    </div>
+    <!-- Botón hamburguesa para abrir el menú -->
+    <button class="header__menu-button header__menu-button--open" title="Abrir Menu" id="abrir">☰</button>
+
+    <!-- Menú de navegación -->
+    <nav class="nav" id="nav">
+
+      <!-- Botón para cerrar el menú -->
+      <div class="nav__close-wrapper">
+        <button class="header__menu-button header__menu-button--close" title="Cerrar Menu" id="cerrar">✖</button>
+      </div>
+
+      <!-- Items de la Nav Bar -->
+      <ul class="nav__list">
+        <li class="nav__item">
+          <!-- Items Home-->
+          <button class="nav__link nav__link--active" id="home" data-page="home.html"
+            onclick="document.querySelector('#home').click();">HOME</button>
+        </li>
+        <li class="nav__item">
+          <!-- Items Work-->
+          <button class="nav__link" id="work" data-page="work.html"
+            onclick="document.querySelector('#work').click();">WORK</button>
+          <ul class="nav__submenu">
+            <li>
+              <!-- Sub-Items Proyect-->
+              <button class="nav__sublink" id="proyectos" data-active="work" data-page="proyectos.html" title="Proyect"
+                onclick="document.querySelector('#proyectos').click();">PROYECT</button>
+            </li>
+            <li>
+              <!-- Sub-Items Láminas-->
+              <button class="nav__sublink" id="poster" data-active="work" data-page="poster.html" title="Poster"
+                onclick="document.querySelector('#poster').click();">POSTER</button>
+            </li>
+            <li>
+              <!-- Sub-Items Collage-->
+              <button class="nav__sublink" id="collage" data-active="work" data-page="collage.html" title="Collages"
+                onclick="document.querySelector('#collage').click();">COLLAGES</button>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav__item">
+          <!-- Items About-->
+          <button class="nav__link" id="about" data-page="about.html" title="About"
+            onclick="document.querySelector('#about').click();">ABOUT</button>
+        </li>
+        <li class="nav__item">
+          <!-- Items Contact-->
+          <button class="nav__link" id="contact" data-page="contact.html" title="Contact"
+            onclick="document.querySelector('#contact').click();">CONTACT</button>
+        </li>
+        <li class="nav__item">
+          <!-- Items Services-->
+          <button class="nav__link" id="services" data-page="servicios.html" title="Services"
+            onclick="document.querySelector('#services').click();">SERVICES</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- _________________________________________________________Contenido principal de la página_____________________________________________________-->
+
+  <div id="contenido-dinamico"></div>
+
+  <!--_______________________________________________FOOTER____________________________________________________________________________________-->
+  <footer class="footer">
+    <div class="footer__top">
+      <!-- Logo -->
+      <div class="footer__logo-nav">
+        <img src="images/logo_oreja_negro.svg" alt="Logo CECEO" class="footer__logo" width="60" height="60"
+          loading="lazy">
+
+
+        <!-- Nav Bar con items - Modo Botón -->
+        <nav class="footer__nav" aria-label="Navegación del pie de página">
+          <button class="footer__nav-link" onclick="document.querySelector('#home').click();">Home</button>
+          <button class="footer__nav-link" onclick="document.querySelector('#work').click();">Work</button>
+          <button class="footer__nav-link" onclick="document.querySelector('#about').click();">About</button>
+          <button class="footer__nav-link" onclick="document.querySelector('#services').click();">Services</button>
+          <button class="footer__nav-link footer__nav-link--highlight"
+            onclick="document.querySelector('#contact').click();">Contact</button>
+        </nav>
+
+        <!-- Redes sociales/ Behance y LinkedIn -->
+        <div class="footer__social">
+          <a href="https://www.behance.net/ngelagmezordez1" target="_blank" rel="noreferrer" class="footer__social-link"
+            aria-label="Behance">
+        <!-- Enlace Porfolio behance -->
+            <img src="images/behance_redondo.svg" alt="Behance" class="footer__social-icon" width="36" height="36"
+              loading="lazy">
+          </a>
+          <a href="https://www.linkedin.com/in/%C3%A1ngela-g%C3%B3mez-ord%C3%B3%C3%B1ez%C3%B3%C3%B1ez/" target="_blank"
+            rel="noreferrer" class="footer__social-link" aria-label="LinkedIn"> <!-- Enlace Porfolio LinkedIn -->
+            <img src="images/link_redondo.svg" alt="LinkedIn" class="footer__social-icon" width="36" height="36"
+              loading="lazy">
+          </a>
+        </div>
+
+        <!-- Créditos del footer-->
+        <div class="footer__credits">
+          <p class="footer__credits-text">©2025 Ángela Gómez. Todos los derechos reservados.</p>
+          <p class="footer__credits-text"> 👽 Diseñado con cariño 👽</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+<!-- Contenido Central Página Contacto -->
+<main class="contact">
+
+  <!-- Cabecera principal de la página de contacto lista para encargos -->
+  <header class="contact-form__header">
+    <!-- Título destacado de cabecera -->
+    <h1 class="contact-form__title">CONTACTA PARA ENCARGOS</h1>
+    <!-- Texto introductorio para estabecer contacto-->
+    <p class="contact-form__description">
+      ¿Tienes una idea, proyecto o encargo en mente? Completa el formulario para establecer un contacto.
+    </p>
+  </header>
+
+  <!-- Contenedor alberga el Formulario Centarl  y el bloque de 'Contacto adicional / +info' -->
+  <div class="contact-form__wrapper">
+    <div class="contact-form__layout">
+      <!-- Imagen/Logo de la 'Marca'-->
+      <div class="contact-form__image" role="img" aria-label="Logo de marca decorativo"></div>
+
+      <!-- Estructura del Formualrio de Contacto para Encargos -->
+      <form class="contact-form__form" action="procesar-formulario.php" method="POST" enctype="multipart/form-data">
+
+        <!-- Nombre del cliente -->
+        <label class="contact-form__label" for="nombre">Nombre Completo:</label>
+        <input class="contact-form__input" type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+
+        <!-- Correo Electróncio personal -->
+        <label class="contact-form__label" for="email">Correo electrónico:</label>
+        <input class="contact-form__input" type="email" id="email" name="email" placeholder="@correo.com" required>
+
+        <!--Mensaje para texto largo -->
+        <label class="contact-form__label" for="mensaje">Mensaje:</label>
+        <textarea class="contact-form__textarea" id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí" required></textarea>
+
+        <!-- Adjuntar archivos/documentos de referencia para inspiración -->
+        <label class="contact-form__label" for="archivo">Adjuntar Referencias para mayor Inspiración:</label>
+        <input class="contact-form__file" type="file" id="archivo" name="archivo">
+
+        <!-- Seleccionar el motivo del contacto (Síntesis) -->
+        <fieldset class="contact-form__fieldset">
+          <legend class="contact-form__legend">Motivo de contacto:</legend>
+
+          <!-- Opciones de selección mediante Radio Buttons -->
+          <label class="contact-form__radio-label">
+            <!-- Opción 1-->
+            <input class="contact-form__radio" type="radio" name="motivo" value="Duda" required> Duda
+          </label>
+           <!-- Opción 12-->
+          <label class="contact-form__radio-label">
+            <input class="contact-form__radio" type="radio" name="motivo" value="Encargo"> Encargo
+          </label>
+           <!-- Opción 3-->
+          <label class="contact-form__radio-label">
+            <input class="contact-form__radio" type="radio" name="motivo" value="otro"> Otro
+          </label>
+        </fieldset>
+
+        <!-- Botón para el envió del Formulario completo -->
+        <button class="contact-form__button" type="submit" title="Enviar el formulario de contacto">Enviar mensaje</button>
+      </form>
+
+      <!-- Información 'Extra' aportada al formulario, enlaces... -->
+      <aside class="contact-info">
+        <h2 class="contact-info__title">Información de Contacto CECEO</h2>
+        <div class="contact-info__item">
+
+          <!-- Mi  Email Personal -->
+          <span class="contact-info__label">Email:</span>
+          <a href="mailto:angelagomezmahandi@gmail.com" class="contact-info__link" title="Enviar correo a Angela Gómez">angelagomezmahandi@gmail.com</a>
+        </div>
+
+        <!-- Mi Teléfono Personal -->
+        <div class="contact-info__item">
+          <span class="contact-info__label">Teléfono:</span>
+          <a href="tel:+34618977803" class="contact-info__link" title="Llamar a Angela Gómez">+34 618 977 803</a>
+        </div>
+
+        <!-- Mis Porfolios en Webs -->
+        <div class="contact-info__item">
+          <span class="contact-info__label">Perfiles de porfolios:</span>
+          <a href="https://www.linkedin.com/in/ángela-gómez-ordóñezóñez/"
+            class="contact-info__link" target="_blank" rel="noopener noreferrer" title="Ver perfil de LinkedIn de Ángela Gómez">LinkedIn</a> ·
+          <a href="https://www.behance.net/ngelagmezordez1" class="contact-info__link" target="_blank"
+            rel="noopener noreferrer" title="Ver portfolio de Behance de Ángela Gómez">Behance</a>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <!-- Algunas Preguntas Frecuentes en estilo Acordeón -->
+  <section class="faq" aria-labelledby="faq__title">
+    <h2 id="faq__title" class="faq__title"> ... LAS DE SIEMPRE ...</h2><!-- Título -->
+    <div class="faq__list"> <!-- Preguntas plegables -->
+      <!-- Cada bloque de preguntas usa la etiqueta <details> para mostrar contenido al abrir -->
+      <details class="faq__item">
+        <summary class="faq__question">¿Tienes alguna oficina física?</summary>
+        <p class="faq__answer">¿Tienes alguna oficina física?
+          Trabajo de forma remota para clientes de toda España y otros lugares. Aunque no cuento con una oficina física,
+          estoy siempre disponible para reuniones virtuales, llamadas o colaboraciones online. Creo que la distancia no
+          es un límite cuando se trabaja con pasión, claridad y comunicación constante.</p>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__question">¿Puedo enviarte algunas ideas de referencia?</summary>
+        <p class="faq__answer">¡Por supuesto! Puedes adjuntar referencias visuales, enlaces a proyectos, capturas o
+          incluso moodboards. Todo lo que ayude a transmitir mejor tu visión es bienvenido.
+          Me encanta trabajar con inspiración compartida y materiales que te entusiasmen, porque eso me permite conectar
+          mejor con tu estilo y los objetivos que tienes en mente.
+        </p>
+      </details>
+    </div>
+  </section>
+
+<!-- Mapa de ubicación de referencia (casa/oficina) -->
+<section class="contact-map" aria-labelledby="contact-map__title">
+  <!-- Título oculto para la accesibilidad -->
+  <h2 id="contact-map__title" class="visually-hidden">¿PERO DÓNDE?</h2>
+
+  <!-- Botón para cargar el iframe bajo demanda -->
+  <button class="contact-map__load" onclick="mostrarMapa()" title="Ver mapa de ubicación">Ver Mapa</button>
+
+  <!-- Contenedor donde se insertará el iframe -->
+  <div id="mapaContenedor" class="contact-map__container"></div>
+</section>
+</main>
